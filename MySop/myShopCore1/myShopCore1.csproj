@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11042AC4-314E-4B78-913D-13E97B657348}</ProjectGuid>
+    <ProjectGuid>{78B6DA0F-8E80-4FF2-8C2E-32AEE637EFBD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MyShop.DataAccess.InMemory</RootNamespace>
-    <AssemblyName>MyShop.DataAccess.InMemory</AssemblyName>
+    <RootNamespace>myShopCore1</RootNamespace>
+    <AssemblyName>myShopCore1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,8 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,14 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProductRepository.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\myShopCore1\myShopCore1.csproj">
-      <Project>{78b6da0f-8e80-4ff2-8c2e-32aee637efbd}</Project>
-      <Name>myShopCore1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
